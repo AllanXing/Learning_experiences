@@ -10,11 +10,21 @@ public class Data{
 	}
 	public void displayBin(int d)
 	{
+		/*
 		int i = 31;
 		for(;i >= 0;i--)
 		{
 			int k = (d >> i) & 1;
 			System.out.print(k);
+		}
+		System.out.println();
+		*/
+		int i = 31;
+		while(i >= 0)
+		{
+			int k = (d >> i) & 1;
+			System.out.print(k);
+			i--;
 		}
 		System.out.println();
 	}
